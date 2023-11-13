@@ -1,0 +1,198 @@
+/*About.css*/
+
+.custom-bg-light {
+    background-color: #f0f0f0;
+}
+
+/* ================== Header section ==================== */
+
+header.aboutheader {
+    padding: 6.5rem 0 12.3rem;
+    background: url("../img/about-header-bg.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.aboutheader .heading-container {
+    text-align: center;
+    position: relative;
+    font-family: Nunito, sans-serif;
+    padding-top: 6.5rem;
+}
+
+.aboutheader .heading-container .header {
+    font-size: 4.5rem;
+    font-weight: bold;
+    letter-spacing: 0.3rem;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.read-button {
+    background: #7f5af0;
+    color: white;
+    font-family: inherit;
+    padding: 0.35em;
+    padding-left: 1.2em;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-radius: 0.9em;
+    border: none;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    height: 3.5rem;
+    padding-right: 3.3em;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: Nunito, sans-serif;
+    font-weight: 800;
+}
+
+.read-button .icon {
+    background: white;
+    margin-left: 1em;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.2em;
+    width: 2.2em;
+    border-radius: 0.7em;
+    right: 0.3em;
+    transition: all 0.3s;
+}
+
+.read-button .icon svg {
+    width: 1.1em;
+    transition: transform 0.3s;
+    color: #7f5af0;
+}
+
+.read-button:hover .icon svg {
+    transform: rotate(90deg);
+}
+
+/* Responsive for Mobile */
+
+@media screen and (min-width:430px) {
+    header.aboutheader {
+        padding: 3rem 0 15rem;
+    }
+
+    .aboutheader .heading-container .header {
+        font-size: 3rem;
+    }
+
+    .about-anim-container {
+        display: none;
+    }
+
+    .read-button {
+        font-size: 1rem;
+        height: 3rem;
+    }
+}
+
+/* Responsive for Tablet */
+
+@media screen and (min-width:768px) {
+    header.aboutheader {
+        padding: 3rem 0 15rem;
+    }
+
+    .aboutheader .heading-container .header {
+        font-size: 3rem;
+    }
+
+    .about-anim-container {
+        width: 370px;
+        display: inline-block;
+        padding-top: 5rem;
+    }
+
+    .read-button {
+        font-size: 1rem;
+        height: 3rem;
+    }
+}
+
+/* Responsive for Desktop */
+
+@media screen and (min-width:1024px) {
+    header.aboutheader {
+        padding: 5rem 0 8rem;
+    }
+
+    .aboutheader .heading-container .header {
+        font-size: 4.5rem;
+    }
+
+    .aboutheader .heading-container {
+        padding-top: 6.5rem;
+    }
+
+    .about-anim-container {
+        width: 580px;
+        height: 500px;
+        padding-top: 2.5rem;
+    }
+
+    .read-button {
+        height: 3.5rem;
+        font-size: 1.2rem;
+    }
+}
+
+/* ================== Description section ==================== */
+
+.des-section {
+    padding: 8rem 20rem 8rem 20rem;
+}
+
+.des-section .header {
+    font-size: 2.5rem;
+    font-family: Nunito, sans-serif;
+    font-weight: 700;
+}
+
+.des-section .des-text {
+    font-size: 1.5rem;
+    font-family: Nunito, sans-serif;
+    text-align: justify;
+}
+
+/* Responsive to Mobile */
+
+@media screen and (min-width:430px) {
+    .des-section {
+        padding: 8rem 0 8rem;
+    }
+
+    .des-section .header {
+        text-align: center;
+    }
+
+    .des-section .des-text {
+        font-size: 1.2rem;
+    }
+}
+
+/* Responsive for Desktop */
+
+@media screen and (min-width:1024px) {
+    .des-section {
+        padding: 8rem 20rem 8rem 20rem;
+    }
+    
+    .des-section .des-text {
+        font-size: 1.5rem;
+    }
+}

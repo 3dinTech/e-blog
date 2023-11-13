@@ -1,0 +1,421 @@
+/*Home.css*/
+
+.custom-bg-light {
+    background-color: #f0f0f0;
+}
+
+/* ================== Header section ==================== */
+
+header.masterheader {
+    padding: 6.5rem 0 12.3rem;
+    background: url("../img/home-header-bg.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.masterheader .heading-container {
+    text-align: center;
+    position: relative;
+    font-family: Nunito, sans-serif;
+    padding-top: 6.5rem;
+}
+
+.masterheader .heading-container .sub-heading {
+    font-weight: bold;
+}
+
+.masterheader .heading-container .header {
+    font-size: 4.5rem;
+    font-weight: bold;
+    letter-spacing: 0.5rem;
+}
+
+.home-anim-container {
+    width: 480px;
+    height: 500px;
+    justify-content: center;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.explore-button {
+    background: #7f5af0;
+    color: white;
+    font-family: inherit;
+    padding: 0.35em;
+    padding-left: 1.2em;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-radius: 0.9em;
+    border: none;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    height: 3.5rem;
+    padding-right: 3.3em;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: Nunito, sans-serif;
+    font-weight: 800;
+}
+
+.explore-button .icon {
+    background: white;
+    margin-left: 1em;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.2em;
+    width: 2.2em;
+    border-radius: 0.7em;
+    right: 0.3em;
+    transition: all 0.3s;
+}
+
+.explore-button .icon svg {
+    width: 1.1em;
+    transition: transform 0.3s;
+    color: #7f5af0;
+}
+
+.explore-button:hover .icon svg {
+    transform: rotate(90deg);
+}
+
+/* Responsive for Mobile */
+
+@media screen and (min-width:430px) {
+    header.masterheader {
+        padding: 3rem 0 15rem;
+    }
+
+    .home-anim-container {
+        display: none;
+    }
+
+    .explore-button {
+        font-size: 1rem;
+        height: 3rem;
+    }
+}
+
+/* Responsive for Tablet */
+
+@media screen and (min-width:768px) {
+    header.masterheader {
+        padding: 3rem 0 15rem;
+    }
+
+    .masterheader .heading-container .header {
+        font-size: 3rem;
+    }
+
+    .home-anim-container {
+        width: 350px;
+        height: 280px;
+        display: inline-block;
+    }
+
+    .explore-button {
+        font-size: 1rem;
+        height: 3rem;
+    }
+}
+
+/* Responsive for Desktop */
+
+@media screen and (min-width:1024px) {
+    header.masterheader {
+        padding: 5rem 0 10rem;
+    }
+
+    .masterheader .heading-container .header {
+        font-size: 4.5rem;
+    }
+
+    .masterheader .heading-container {
+        padding-top: 6.5rem;
+    }
+
+    .home-anim-container {
+        width: 480px;
+        height: 500px;
+    }
+
+    .explore-button {
+        height: 3.5rem;
+        font-size: 1.2rem;
+    }
+}
+
+/* ================== Category section ==================== */
+
+.category-section {
+    padding: 8rem 0 8rem;
+}
+
+.category-section .prog-icon {
+    font-size: 5rem;
+    color: #fff;
+}
+
+/* ================== Post section ==================== */
+
+.post-section {
+    padding: 8rem 0 8rem;
+}
+
+.post-section .title {
+    font-family: Nunito, sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    text-decoration: none;
+    color: #212529;
+}
+
+.post-section .title:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.post-section .card-header {
+    font-family: Nunito, sans-serif;
+    font-weight: 700;
+}
+
+.post-section .card-title {
+    font-size: 1.1rem;
+    font-family: Nunito, sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.post-section .card-title:hover {
+    text-decoration: underline;
+}
+
+.post-section span {
+    font-family: Nunito, sans-serif;
+}
+
+/* Responsive for Moblie */
+
+@media screen and (min-width:430px) {
+    .post-section .sub-heading {
+        font-size: 1.3rem;
+        font-family: Nunito, sans-serif;
+        font-weight: 700;
+    }
+
+    .post-section .title {
+        font-size: 1.5rem;
+    }
+}
+
+/* Responsive for Tablet */
+
+@media screen and (min-width:768px) {
+    .post-section .card-title {
+        font-size: 1rem;
+    }
+}
+
+/* Responsive for Desktop */
+
+@media screen and (min-width:1024px) {
+    .post-section .sub-heading {
+        font-size: 1.5rem;
+        font-family: Nunito, sans-serif;
+        font-weight: 700;
+    }
+
+    .post-section .title {
+        font-size: 2rem;
+    }
+
+    .post-section .card-title {
+        font-size: 1.1rem;
+    }
+}
+
+/* ================== Contact section ==================== */
+
+.contact-section {
+    padding: 3rem 0 3rem;
+}
+
+.contact-section .header {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Nunito, sans-serif;
+    font-weight: 700;
+}
+
+.contact-section .contact-description {
+    text-align: center;
+    font-family: Nunito, sans-serif;
+    font-weight: 500;
+}
+
+.contact-anim-container {
+    width: 400px;
+    justify-content: center;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-contact {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    padding-block: 0.5rem;
+    padding-inline: 1.25rem;
+    background-color: #7f5af0;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffff;
+    gap: 10px;
+    font-weight: bold;
+    outline: none;
+    overflow: hidden;
+    font-size: 1.5rem;
+    font-family: Nunito, sans-serif;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-contact:hover {
+    transform: scale(1.05);
+}
+
+.btn-contact:hover .icon {
+    transform: translate(4px);
+}
+
+.btn-contact:hover::before {
+    animation: shine 1.5s ease-out infinite;
+}
+
+.btn-contact::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background-image: linear-gradient(120deg,
+            rgba(255, 255, 255, 0) 30%,
+            rgba(255, 255, 255, 0.8),
+            rgba(255, 255, 255, 0) 70%);
+    top: 0;
+    left: -100px;
+    opacity: 0.6;
+}
+
+@keyframes shine {
+    0% {
+        left: -100px;
+    }
+
+    60% {
+        left: 100%;
+    }
+
+    to {
+        left: 100%;
+    }
+}
+
+/* Responsive to Mobile */
+
+@media screen and (min-width:430px) {
+    .btn-contact {
+        margin-top: 2rem;
+        font-size: 1.3rem;
+    }
+
+    .contact-anim-container {
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+/* Responsive to Tablet */
+
+@media screen and (min-width:768px) {
+    .contact-section .header {
+        font-size: 1.5rem;
+    }
+
+    .btn-contact {
+        margin-top: 1.5rem;
+    }
+
+    .contact-anim-container {
+        width: 330px;
+        justify-content: center;
+    }
+}
+
+/* Responsive for Desktop */
+
+@media screen and (min-width:1024px) {
+    .contact-section .header {
+        font-size: 2.5rem;
+    }
+
+    .btn-contact {
+        margin-top: 2rem;
+        font-size: 1.5rem;
+    }
+
+    .contact-anim-container {
+        width: 400px;
+    }
+}
+
+/* Scroll to top */
+
+.scroll-top {
+    width: 45px;
+    height: 45px;
+    background: #7f5af0;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 5px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 9;
+    cursor: pointer;
+    transition: all 0.3s ease-out 0.3s;
+}
+
+.scroll-top:hover {
+    color: #fff;
+    background: rgba(127, 90, 235, 1);
+}

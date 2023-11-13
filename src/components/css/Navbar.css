@@ -1,0 +1,23 @@
+/* Navbar.css */
+
+.navbar-container {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar-container .navbar {
+    background-color: #fff;
+    padding: 12px 0;
+}
+
+.navbar-container .navbar-brand {
+    font-family: Nunito, sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.navbar .nav-link {
+    font-family: Nunito, sans-serif;
+    font-weight: bold;
+}
